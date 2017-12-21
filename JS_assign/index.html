@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>
+            Index
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        
+        <script>
+          
+            
+            
+            </script>
+            <script src="signinmodule.js"></script>
+        	<script src="signupmodule.js"></script>
+	    <script src="init_load.js"></script>
+	    <script src="storagemodule.js"></script>
+        <script src="editmodule.js"></script>
+    </head>
+    <body bgcolor="grey" onload="init_load.initial_load()">
+        <h1><b>Cuelogic</b></h1>
+        
+        <div id="container" class="container">
+                <div class="menu" id="div1">
+                        <a href="#Home" onclick="init_load.signup()">Home</a> &nbsp; &nbsp; &nbsp; &nbsp;
+                        <a href="#div_signin" id="teacher" onclick="init_load.signin()">Sign In</a>  &nbsp; &nbsp; &nbsp; &nbsp;
+                        <a href="#div_signup" onclick="init_load.signup()">Sign Up</a>  &nbsp; &nbsp; &nbsp; &nbsp;
+                    </div>
+                    <div class="menu" id="teacher_header">
+                            <a ><span style="color:red;  font-size:30px">Welcome!</a>
+                            <a href="#Home" onclick="signin_module.personal_details()">Home</a> &nbsp; &nbsp; &nbsp; &nbsp;
+                            <a href="#div_signin" id="teacher" onclick="signin_module.dis_table()">Teacher</a>  &nbsp; &nbsp; &nbsp; &nbsp;
+                            <a href="#div_signup" onclick="init_load.edit()">EditProfile</a>  &nbsp; &nbsp; &nbsp; &nbsp;
+                            <a href="#div_logout"  onclick="init_load.initial_load()">Logout</a>
+                           
+                        </div>
+			
+			<div class="menu" id="student_header">
+                            <a ><span style="color:red;  font-size:30px">Welcome!</a>
+                            <a href="#Home" onclick="signin_module.personal_details()">Home</a> &nbsp; &nbsp; &nbsp; &nbsp;
+                            <a href="#div_signin" id="teacher" onclick="signin_module.dis_table()">student</a>  &nbsp; &nbsp; &nbsp; &nbsp;
+                            <a href="#div_signup" onclick="init_load.edit()">EditProfile</a>  &nbsp; &nbsp; &nbsp; &nbsp;
+                            <a href="#div_logout"  onclick="init_load.initial_load()">Logout</a>
+                           
+                        </div>
+
+
+                <div id="div_signup" class="c_signup">
+                    <br /><br />
+                    <div class="head_align">
+                    <h2><b>Sign Up</b></h2><br />
+                    </div>
+                    <label >First Name:</label>
+                     <label id="fname_label" ><span style="color:red;  font-size:15px"><l>*enter first name .</l></label>
+                    <input class="textboxalign" type="text"  id="firstname" placeholder="  first name" ><br /><br />
+                    <label >Last Name:</label>
+                    <label id="lname_label" ><span style="color:red;  font-size:15px"><l>*enter last name .</l></label>
+                    <input class="textboxalign" type="text" id="lastname" placeholder="  last name" ><br /><br />
+                    <label >Address:</label>
+                    <label id="address_label" ><span style="color:red;  font-size:15px"><l>*enter correct address </l></label>
+                    <input class="textboxalign" type="text" id="address" placeholder="  address" ><br /><br />
+                    <label >Mb Number:</label>
+                    <label id="mbnumber_label" ><span style="color:red;  font-size:15px"><l>*enter correct mobile number.</l></label>
+                    <input class="textboxalign" type="number" id="mobilenumber" placeholder=" +91" ><br /><br />
+                    <label >Gender:</label>
+                    <select  class="textboxalign" id="gender">
+			       <option value="select">select</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select><br /><br />
+                    <label >Email Id:</label>
+                    <label id="emailid_label" ><span style="color:red;  font-size:15px"><l>*enter correct email id .</l></label>
+                    <label id="emailid_exist_label" ><span style="color:red;  font-size:15px"><l>* email id alreay exists.</l></label>
+                    <input  class="textboxalign" type="text" id="emailid" placeholder="  email id" ><br /><br />
+                    <label >Profession:</label>
+                    <select  class="textboxalign" id="profession">
+			<option value="select">select</option>
+                        <option value="student">student</option>
+                        <option value="teacher">teacher</option>
+                    </select><br /><br />
+                    <label >Password:</label>
+                    <label id="password_label" ><span style="color:red;  font-size:15px"><l>*enter password.</l></label>
+                    <input  class="textboxalign" type="password" id="password" placeholder="  enter password"><br /><br /> 
+                    <label >Re-enter password:</label>
+                    <label id="rpassword_label" ><span style="color:red;  font-size:15px"><l>*re-enter correct password.</l></label>
+                    <input class="textboxalign"  type="password" id="rpassword" placeholder="  enter password"><br /><br /> 
+                    <input type="submit" id="signup" value="Sign Up" onclick="signup_module.fetchDetails()">
+                    <input type="submit" id="reset" value="Cancel" onclick="signup_module.reset()">
+                </div>
+                <br /><br /><br />
+
+
+		<div id="div_edit" class="c_edit">
+                    <br /><br />
+                    <div class="head_align">
+                    <h2><b>Edit Profile</b></h2><br />
+                    </div>
+                    <label >First Name:</label>
+                     <label id="fname_label1" ><span style="color:red;  font-size:15px"><l>*enter first name .</l></label>
+                    <input class="textboxalign" type="text"  id="firstname1" placeholder="  first name" ><br /><br />
+                    <label >Last Name:</label>
+                     <label id="lname_label1" ><span style="color:red;  font-size:15px"><l>*enter last name .</l></label>
+                    <input class="textboxalign" type="text" id="lastname1" placeholder="  last name" ><br /><br />
+                    <label >Address:</label>
+                     <label id="address_label1" ><span style="color:red;  font-size:15px"><l>*enter correct address </l></label>
+                    <input class="textboxalign" type="text" id="address1" placeholder="  address" ><br /><br />
+                    <label >Mb Number:</label>
+                     <label id="mbnumber_label1" ><span style="color:red;  font-size:15px"><l>*enter correct mobile number.</l></label>
+                    <input class="textboxalign" type="number" id="mobilenumber1" placeholder=" +91" ><br /><br />
+                    <label >Gender:</label>
+                    <select  class="textboxalign" id=gender1>
+			        <option value="select">select</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select><br /><br />
+                    <label >Email Id:</label>
+                     <label id="emailid_label1" ><span style="color:red;  font-size:15px"><l>*enter correct email id .</l></label>
+                        <!-- <label id="emailid_exist_label1" ><span style="color:red;  font-size:15px"><l>* email id alreay exists.</l></label> -->
+                    
+                    <input  class="textboxalign" type="text" id="emailid1" placeholder="  email id" ><br /><br />
+                    <label >Profession:</label>
+                    <select  class="textboxalign" id=profession1>
+			<option value="select">select</option>
+                        <option value="male">student</option>
+                        <option value="female">teacher</option>
+                    </select><br /><br />
+                    <label >Password:</label>
+                     <label id="password_label1" ><span style="color:red;  font-size:15px"><l>*enter password.</l></label>
+                    <input  class="textboxalign" type="password" id="password1" placeholder="  enter password"><br /><br /> 
+                    <label >Re-enter password:</label>
+                      <label id="rpassword_label1" ><span style="color:red;  font-size:15px"><l>*re-enter correct password.</l></label>
+                    <input class="textboxalign"  type="password" id="rpassword1" placeholder="  enter password"><br /><br /> 
+                    <input type="submit" id="edit" value="Save" onclick="edit_profile.fetchDetailsSave();">
+                    <input type="submit" id="reset" value="Cancel" onclick="signup_module.fetchDetailsSave();">
+                </div>
+                <br /><br /><br />
+
+
+
+
+
+                
+                <div id="div_signin" class="c_signin">
+                        
+                        <div class="head_align">
+                        <h2><b>Sign In</b></h2><br />
+                        </div>
+                        <label>Email id:</label>
+                        <input class="textboxalign" type="text" id="s_emailid" placeholder="email id" ><br /><br />
+                        <label>Password:</label>
+                        <input class="textboxalign" type="password" id="s_password" placeholder=" password"><br /><br /> <br />
+                        <input type="submit" name="signin" value="Sign In" onclick="signin_module.signin();">
+                        <input type="reset" name="signup" value="Sign Up" onclick="init_load.signup();">
+                 </div>
+
+                 
+                <div id="profile">
+  
+                    </div>
+                    <div id="show_data"></div>
+                
+            </div>
+
+        </ul>
+        <body>
+</html>
