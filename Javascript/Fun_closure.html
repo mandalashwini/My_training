@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <p id="p1">Function closure></p>
+        <script>
+            var add=(function(){
+                cnt=0;
+                return function(){
+                    return cnt+=1;
+                }
+            })();
+            x=add();
+            document.getElementById("p1").innerHTML=x;
+        </script>
+    </body>
+</html>

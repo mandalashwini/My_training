@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <p id="p1">Date Example</p>
+        <p id="p2">Object Example</p>
+        <script>
+            d=new Date();
+            document.getElementById("p1").innerHTML=d;
+            var per={
+                name:"ABC",
+                dis:function()
+                {
+                    return this.name;
+                }
+            }
+            document.getElementById("p2").innerHTML=per.dis();
+        </script>
+    </body>
+    </html>

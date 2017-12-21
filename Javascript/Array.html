@@ -1,0 +1,49 @@
+<html>
+<body>
+    
+        
+        <input type="submit" value="click here" onclick="fun()">
+        <p id="demo"></p>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <script>
+        
+        
+        function fun() {
+        var obj={ //object literal
+            a:12,
+            b:"ABC",
+            c:[1,2,3]
+        }
+
+        document.getElementById("demo").innerHTML=Object.getOwnPropertyNames(obj);
+        }
+        function car(model,price,color)
+        {
+            this.model=model;
+            this.price=price;
+            this.color=color;
+        }
+    
+        var car1=new car("BMW",2.5,"red");
+        var car2=new car("Benz",5.2,"grey");
+        car1.made="India";
+        
+        function person(name,age,own){
+            this.name=name;
+            this.age=age;
+            owner=own;
+        }
+        var per1=new person("Abc",21,car1);
+        var per2=new person("xyc",22,car2);
+        document.getElementById("p1").innerHTML=Object.values(car1);
+        document.getElementById("p2").innerHTML=Object.values(car2);
+
+
+       
+        
+        
+       
+    </script>
+</body>
+    </html>

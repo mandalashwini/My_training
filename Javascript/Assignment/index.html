@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Registration form</title>
+    </head>
+    <style>
+        .container
+        {
+            padding: 100px;
+            background-color: grey;
+        }
+       
+      input[type=text],input[type=password]
+      {
+        padding: 10px;
+        border-color: "red";
+        width:30%;
+        height:12px;
+      }
+      table{
+          padding: 50px;
+      }
+      .p1{
+          background-color: white;
+          opacity: 0.9;
+          width:500px;
+        
+      }
+      .p2{
+          background-color: white;
+          opacity: 0.9;
+          width:500px;
+          display: block;
+      }
+    </style>
+    <script src="loginform.js">
+    </script>
+    <script src="registrationform.js">
+        
+        </script>
+        
+    <body>
+          <div class="container">
+             <div class="p2">
+                <table width=1000>
+                  <th><h1><b>Sign Up</b></h1></th>
+                <tr>
+                    <td width=10px>First Name:</td>
+                    <td width=80%><input type="text" name="firstname" placeholder="first name"   ><br /><br /></td>
+                </tr>
+
+                <tr>
+                    <td >Last Name:</td>
+                    <td><input type="text" name="lastname" placeholder="last name" ><br /><br /></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" name="address" placeholder="address">&nbsp;&nbsp;&nbsp;<br /><br /></td>
+                </tr>
+                <tr>
+                     <td>pincode:</td>
+                     <td><input type:"number" name:"pincode" placeholder="e.g 413005"><br /><br /></td>
+                </tr>
+                 <tr>
+                     <td>Mobile Number:</td>
+                     <td><input type="number" name="address" placeholder="+91" ><br /><br /></td>
+                 </tr>
+                <tr>
+                    <td>Select Gender:</td>
+                    <td><input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female<br /><br /></tr></td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth:</td><td><input type="date" name="dob" ><br /><br /></td>
+                </tr>
+                <tr>
+                    <td>Email_Id:</td><td><input type="text" name="emailid" placeholder="email id" ><br /><br /></td>
+                </tr>
+                <tr>
+                    <td>Profession:</td><td><input type="text" name="username" placeholder="eg student" ><br /><br /></td>
+                </tr>
+                <tr>
+                    <td> Enter Password:</td><td><input type="password" name="password" placeholder=" enter password"><br /><br /> </td>
+                </tr>
+                <tr>
+                    <td>Re-Enter Password:</td>
+                    <td><input type="password" name="reenterpassword" placeholder="re-enter password"><br /><br /></td>
+                </tr>
+                <tr>
+                    <td><br /><input type="submit" value="Sign Up" name="signup" onclick="register()" ></td>
+                    <td><br /><input type="Reset" value="Resert" name="reset"></td>
+                </tr>
+            </table>
+          </div>
+        
+        <br />
+        <br />
+        
+            <div class="p1">
+             <table width=1000>
+                <th><h1><b>Sign In</b></h1></th>
+                <tr>
+                   <td>Email_Id:</td>
+                   <td width=100%><input type="text" name="username" placeholder="username/email id" ><br /><br /></td>
+                </tr>
+                <tr>
+                    <td> Password:</td>
+                      <td width=80%><input type="password" name="password" placeholder="password" ><br /><br /></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Sign In" name="signin" onclick="login()"></td>
+                    <td><input type="submit" value="Sign Up" name="signup" onclick="register()"></td>
+                </tr>
+             </table>
+           </div>
+     
+        </div>
+    </body>
+</html>

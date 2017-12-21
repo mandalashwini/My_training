@@ -1,0 +1,60 @@
+I, [2017-12-12T14:50:58.579833 #9490]  INFO -- : Some information
+D, [2017-12-12T14:50:58.579912 #9490] DEBUG -- : Debugging hints
+E, [2017-12-12T14:50:58.579941 #9490] ERROR -- : Something went wrong (StandardError)
+
+I, [2017-12-12T14:50:59.641860 #9490]  INFO -- : Some information
+D, [2017-12-12T14:50:59.641923 #9490] DEBUG -- : Debugging hints
+E, [2017-12-12T14:50:59.641946 #9490] ERROR -- : Something went wrong (StandardError)
+
+I, [2017-12-12T14:51:00.707248 #9490]  INFO -- : Some information
+D, [2017-12-12T14:51:00.707312 #9490] DEBUG -- : Debugging hints
+E, [2017-12-12T14:51:00.707336 #9490] ERROR -- : Something went wrong (StandardError)
+
+I, [2017-12-12T14:51:50.930872 #9527]  INFO -- : Some information
+D, [2017-12-12T14:51:50.930963 #9527] DEBUG -- : Debugging hints
+E, [2017-12-12T14:51:50.931004 #9527] ERROR -- : Something went wrong (StandardError)
+
+I, [2017-12-12T14:52:49.828181 #9558]  INFO -- : Some information
+D, [2017-12-12T14:52:49.828238 #9558] DEBUG -- : Debugging hints
+E, [2017-12-12T14:52:49.828258 #9558] ERROR -- : Something went wrong (StandardError)
+
+I, [2017-12-12T14:52:50.997054 #9558]  INFO -- : Some information
+D, [2017-12-12T14:52:50.997100 #9558] DEBUG -- : Debugging hints
+E, [2017-12-12T14:52:50.997116 #9558] ERROR -- : Something went wrong (StandardError)
+
+I, [2017-12-12T14:52:52.176856 #9558]  INFO -- : Some information
+D, [2017-12-12T14:52:52.176902 #9558] DEBUG -- : Debugging hints
+E, [2017-12-12T14:52:52.176923 #9558] ERROR -- : Something went wrong (StandardError)
+
+I, [2017-12-12T14:52:53.316728 #9558]  INFO -- : Some information
+D, [2017-12-12T14:52:53.316776 #9558] DEBUG -- : Debugging hints
+E, [2017-12-12T14:52:53.316794 #9558] ERROR -- : Something went wrong (StandardError)
+
+I, [2017-12-12T14:52:54.477845 #9558]  INFO -- : Some information
+D, [2017-12-12T14:52:54.477886 #9558] DEBUG -- : Debugging hints
+E, [2017-12-12T14:52:54.477926 #9558] ERROR -- : Something went wrong (StandardError)
+
+I, [2017-12-12T14:52:55.657456 #9558]  INFO -- : Some information
+D, [2017-12-12T14:52:55.657499 #9558] DEBUG -- : Debugging hints
+E, [2017-12-12T14:52:55.657514 #9558] ERROR -- : Something went wrong (StandardError)
+
+I, [2017-12-12T14:52:56.821782 #9558]  INFO -- : Some information
+D, [2017-12-12T14:52:56.821832 #9558] DEBUG -- : Debugging hints
+E, [2017-12-12T14:52:56.821861 #9558] ERROR -- : Something went wrong (StandardError)
+
+I, [2017-12-12T14:52:57.993230 #9558]  INFO -- : Some information
+D, [2017-12-12T14:52:57.993276 #9558] DEBUG -- : Debugging hints
+E, [2017-12-12T14:52:57.993300 #9558] ERROR -- : Something went wrong (StandardError)
+
+I, [2017-12-12T14:52:59.187727 #9558]  INFO -- : Some information
+D, [2017-12-12T14:52:59.187771 #9558] DEBUG -- : Debugging hints
+E, [2017-12-12T14:52:59.187793 #9558] ERROR -- : Something went wrong (StandardError)
+
+I, [2017-12-12T14:53:00.326873 #9558]  INFO -- : Some information
+D, [2017-12-12T14:53:00.326913 #9558] DEBUG -- : Debugging hints
+E, [2017-12-12T14:53:00.326929 #9558] ERROR -- : Something went wrong (StandardError)
+
+I, [2017-12-13T18:46:20.273809 #9885]  INFO -- : Some information
+D, [2017-12-13T18:46:20.285027 #9885] DEBUG -- : Debugging hints
+E, [2017-12-13T18:46:20.285095 #9885] ERROR -- : Something went wrong (StandardError)
+

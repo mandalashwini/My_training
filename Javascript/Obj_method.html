@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <p id="p1">Function as object method</p>
+        <script>
+       var per={
+           name:"Abx",
+           age:"21",
+           detail:function()
+           {
+               return this.name+" "+this.age;
+           }
+       }
+       var sper={
+           name:"xyz",
+           age:"20",
+
+       }
+        x=per.detail.apply(sper);
+        document.getElementById("p1").innerHTML=Math.max(1,2,3);
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,5 @@
+code,name,department,age,join_date
+1,abc,21,finance,24,12/4/2017
+2,xyz,24,hr,24,11/5/2017
+3,pqr,23,finance,12,12/1/2017
+4,lmn,26,tech,20,9/9/2017

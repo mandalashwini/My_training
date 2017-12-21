@@ -1,0 +1,59 @@
+<html>
+    <body>
+        <p id="p1">Object</p>
+        <p id="p2">Object</p>
+        <p id="p3">Object</p>
+        <p id="p4">Object</p>
+        
+        <script>
+           /* var person={
+                fname:"ABC",
+                lname:"Xyz",
+                fullname:function()
+                {
+                    return this.fname+" "+this.lname;
+                }
+            }*/
+            var person1=
+            {
+                id:"1",
+                name:"Ashu"
+            };
+            person1.detail=function()
+            {
+                return this.id+"&nbsp&nbsp&nbsp&nbsp "+this.name;
+            }
+           // document.getElementById("p1").innerHTML=person.fullname();
+           // document.getElementById("p1").innerHTML=person[fname];
+            /*var x="lname";
+            document.getElementById("p1").innerHTML=person[x];
+            temp="";
+            person.age="21";
+            delete person.lname;
+            for(x in person)
+            {
+                temp+=person[x]+"&nbsp&nbsp&nbsp";
+            }
+        
+            document.getElementById("p1").innerHTML=temp;*/
+            document.getElementById("p2").innerHTML=person1.detail();
+
+            function stud_info(id,name,per)
+            {
+                this.id=id;
+                this.name=name;
+                this.per=per;
+            }
+            var s1=new stud_info(12,"ash",89.09);
+            var s2=new stud_info(20,"xyz",93.35);
+            document.getElementById("p3").innerHTML="Student1_info:-&nbsp&nbsp&nbsp"+s1.id+"&nbsp&nbsp&nbsp"+s1.name+"&nbsp&nbsp&nbsp"+s1.per+"<br>"
+            document.getElementById("p4").innerHTML="Student2_info:-&nbsp&nbsp&nbsp"+s2.id+"&nbsp&nbsp&nbsp"+s2.name+"&nbsp&nbsp&nbsp"+s2.per+"<br>"
+
+
+
+            
+
+        </script>
+
+    </body>
+</html>

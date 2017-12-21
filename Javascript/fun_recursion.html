@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<!--<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+<p id="demo"></p>-
+<input type="button" value="click here" name="b1" onclick=toCelsius(50)>-->
+<p id="p1">calculate</p>
+<script type="text/javascript">
+	function fun(x)
+	{
+		if(x===0)
+			return 1;
+		else
+			return(x*fun(x-1));
+	}
+	document.getElementById("p1").innerHTML=fun(5);
+</script>
+</body>
+</html>

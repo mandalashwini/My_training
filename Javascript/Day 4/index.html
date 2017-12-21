@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>
+            Index
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <script>
+            function initial_load()
+            {
+                document.getElementById('div_signup').style.display="block";
+                document.getElementById('div_signin').style.display="none";
+                
+                
+            }
+            function signin()
+            {
+                document.getElementById('div_signup').style.display="none";
+                document.getElementById('div_signin').style.display="block";
+                
+                
+            }
+            
+            function signup()
+            {
+                document.getElementById('div_signup').style.display="block";
+                document.getElementById('div_signin').style.display="none";
+               
+            }
+            
+            </script>
+            <script src="signupmodule.js">
+             </script>
+    </head>
+    <body bgcolor="grey" onload="initial_load()"></body>
+        <h1><b>Cuelogic</b></h1>
+        <div class="menu">
+            <a href="#Home" onclick="signin()">Home</a> &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#div_signin" onclick="signin()">Sign In</a>  &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#div_signup" onclick="signup()">Sign Up</a>  &nbsp; &nbsp; &nbsp; &nbsp;
+        </div>
+        <div id="container" class="container">
+                <div id="div_signup" class="c_signup">
+                    <br /><br />
+                    <div class="head_align">
+                    <h2><b>Sign Up</b></h2><br />
+                    </div>
+                    <label >First Name:</label>
+                    <input class="textboxalign" type="text"  id="firstname" placeholder="  first name" ><br /><br />
+                    <label >Last Name:</label>
+                    <input class="textboxalign" type="text" id="lastname" placeholder="  last name" ><br /><br />
+                    <label >Address:</label>
+                    <input class="textboxalign" type="text" id="address" placeholder="  address" ><br /><br />
+                    <label >Mb Number:</label>
+                    <input class="textboxalign" type="number" id="mobilenumber" placeholder=" +91" ><br /><br />
+                    <label >Gender:</label>
+                    <input type="radio" id="gender" value="male">Male
+                    <input type="radio" id="gender" value="female">Female<br /><br />
+                    <label >Email Id:</label>
+                    <input  class="textboxalign" type="text" id="emailid" placeholder="  email id" ><br /><br />
+                    <label >Profession:</label>
+                    <input  class="textboxalign" type="text" id="profession" placeholder="  eg student" ><br /><br />
+                    <label >Password:</label>
+                    <input  class="textboxalign" type="password" id="password" placeholder="  enter password"><br /><br /> 
+                    <label >Re-enter password:</label>
+                    <input class="textboxalign"  type="password" id="rpassword" placeholder="  enter password"><br /><br /> 
+                    <input type="submit" id="signup" value="Sign Up" onclick="signup_module.fetchDetails()">
+                    <input type="reset" id="reset" value="Reset" onclick="fun()">
+                </div>
+                <br /><br /><br />
+                <div id="div_signin" class="c_signin">
+                        <div class="head_align">
+                        <h2><b>Sign In</b></h2><br />
+                        </div>
+                        <label>Email id:</label>
+                        <input class="textboxalign" type="text" name="emailid" placeholder="email id" ><br /><br />
+                        <label>Password:</label>
+                        <input class="textboxalign" type="password" name="password" placeholder=" password"><br /><br /> <br />
+                        <input type="submit" name="signin" value="Sign In">
+                        <input type="reset" name="signup" value="Sign Up">
+                </div>
+        </div>
+
+        </ul>
+        <body>
+</html>
